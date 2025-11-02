@@ -3,11 +3,10 @@ body {
 }
 
 .parent {
-  /* height:
-  width: ; */
   padding: 30px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card {
