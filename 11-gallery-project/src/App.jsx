@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+
 const App = () => {
   const [userData, setUserData] = useState([]);
 
@@ -25,18 +26,20 @@ const App = () => {
     </h3>
   );
   if (userData.length > 0) {
-    printUserData = userData.map(function (elem, idx) {
+    console.log(userData);
+
+    printUserData = userData.map(function (elemm) {
       return (
-        <div key={idx}>
-          <a href={elem.url} target="_blank">
+        <div key={elemm.id}>
+          <a href={elemm.url} target="_blank">
             <div className="h-40 w-44 overflow-hidden">
               <img
                 className="h-full w-full object-cover rounded-xl"
-                src={elem.download_url}
+                src={elemm.download_url}
                 alt=""
               />
             </div>
-            <h2 className="font-bold text-md">{elem.author}</h2>
+            <h2 className="font-bold text-md">{elemm.author}</h2>
           </a>
         </div>
       );

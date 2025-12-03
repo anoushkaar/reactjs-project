@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  background-color: pink;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-direction: row;
+}
+
+.nav2 {
+  display: flex;
+  gap: 30px;
+}

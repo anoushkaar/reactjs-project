@@ -1,0 +1,8 @@
+@import "tailwindcss";
+:root {
+  --warning: orange;
+  --success: green;
+  --error: red;
+  --info: blue;
+  --text: white;
+}
