@@ -35,7 +35,7 @@ const App = () => {
       {/* <h2>{value}</h2> */}
       <h2>{count}</h2>
       <div style={anous}>
-        <button onClick={increase}>Add</button>
+        <button onClick={()=>increase(count+1)}>Add</button>
         <button onClick={decrease}>
           Diff
         </button>
