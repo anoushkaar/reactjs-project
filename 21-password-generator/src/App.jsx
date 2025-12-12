@@ -56,14 +56,12 @@ function App() {
       <Toaster position="top-center" />
       <div className="flex flex-col items-center justify-center min-h-screen gap-8 bg-gray-950">
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-2xl w-full border border-white/20">
-          <h1 className="text-sm md:text-6xl font-bold text-center mb-12 text-white">
+          <h1 className="text-4xl font-bold text-center mb-12 text-white">
             Password Generator
           </h1>
           <div className="flex flex-col md:flex-row gap-4 mb-8">
-            <div className="flex-1 bg-white/20 backdrop-blur-md p-4 rounded-xl text-sm border border-white/30 flex items-center justify-between gap-4">
-              <h2 className="text-sm md:text-3xl text-white flex-1">
-                {password}
-              </h2>
+            <div className="flex-1 bg-white/20 p-4 rounded-xl text-sm border border-white/30 flex items-center justify-between gap-4">
+              <h2 className="text-xl text-white flex-1">{password}</h2>
               <CopyToClipboard
                 text={password}
                 onCopy={() => toast.success("password copied.")}
@@ -74,7 +72,7 @@ function App() {
               </CopyToClipboard>
             </div>
             <button
-              className="px-8 py-4 rounded-xl bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold text-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
+              className="px-8 py-4 rounded-xl bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
               onClick={passwordGenerator}
             >
               Generate
@@ -142,7 +140,7 @@ function App() {
                 value={rangeValue}
                 onChange={(e) => setRangeValue(e.target.value)}
               />
-              <span className="text-3xl font-bold text-white bg-blue-600 px-4 py-2 rounded-lg min-w-[70px] text-center">
+              <span className="text-lg font-bold text-white bg-blue-600 px-4 py-2 rounded-lg text-center">
                 {rangeValue}
               </span>
             </div>
