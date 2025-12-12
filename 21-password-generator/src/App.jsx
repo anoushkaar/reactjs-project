@@ -59,7 +59,7 @@ function App() {
           <h1 className="text-4xl font-bold text-center mb-12 text-white">
             Password Generator
           </h1>
-          <div className="flex flex-col md:flex-row gap-4 mb-8">
+          <div className="flex flex-row gap-4 mb-8">
             <div className="flex-1 bg-white/20 p-4 rounded-xl text-sm border border-white/30 flex items-center justify-between gap-4">
               <h2 className="text-xl text-white flex-1">{password}</h2>
               <CopyToClipboard
