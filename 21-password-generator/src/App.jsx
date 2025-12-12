@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <Toaster position="top-center" />
-      <div className="flex flex-col items-center justify-center min-h-screen gap-8 bg-gray-950">
+      <div className="flex flex-col items-center justify-center min-h-screen gap-8 bg-gray-900">
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-2xl w-full border border-white/20">
           <h1 className="text-4xl font-bold text-center mb-12 text-white">
             Password Generator
