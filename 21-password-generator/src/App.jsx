@@ -1,3 +1,4 @@
+import { Copy } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import toast, { Toaster } from "react-hot-toast";
@@ -55,8 +56,8 @@ function App() {
     <>
       <Toaster position="top-center" />
       <div className="flex flex-col items-center justify-center min-h-screen gap-8 bg-gray-900">
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-2xl w-full border border-white/20">
-          <h1 className="text-4xl font-bold text-center mb-12 text-white">
+        <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-10 max-w-2xl w-full border border-white/20">
+          <h1 className="text-4xl font-bold text-center mb-10 text-white">
             Password Generator
           </h1>
           <div className="flex flex-row gap-4 mb-8">
@@ -66,13 +67,13 @@ function App() {
                 text={password}
                 onCopy={() => toast.success("password copied.")}
               >
-                <button className="bg-blue-600 px-4 py-2 text-white rounded cursor-pointer hover:bg-blue-800 whitespace-nowrap">
-                  Copy
+                <button className="px-4 py-2 text-white rounded-xl cursor-pointer hover:bg-gray-500 transition-all duration-1000 whitespace-nowrap">
+                  <Copy />
                 </button>
               </CopyToClipboard>
             </div>
             <button
-              className="px-8 py-4 rounded-xl bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
+              className="px-6 py-2 rounded-xl bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95"
               onClick={passwordGenerator}
             >
               Generate
